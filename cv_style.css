@@ -1,0 +1,140 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: white;
+}
+
+body header img{
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 3px solid black;
+  margin-top: 56px;
+}
+
+body header h1{
+  font-size: 40px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body header p{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media (max-width: 750px){
+  nav input[type=checkbox] {
+    display: none;
+    position: absolute;
+  }
+  #hamburger {
+    font-size: 28px;
+    user-select: none;
+    z-index: 0;
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 320px;
+  }
+  #cross{
+    font-size: 28px;
+    user-select: none;
+    z-index: 0;
+    position: absolute;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    padding-left: 320px;
+    visibility: hidden;
+  }
+  #menu{
+    background-color: white;
+    visibility: hidden;
+    margin-top: 65px;
+    height: auto;
+  }
+  #menu li{
+    list-style: none;
+  }
+  #menu li a{
+    color: black;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .menu li a :target{
+    background-color: grey;
+  }
+  #navHeading{
+    text-align: left;
+    padding-bottom: 16px;
+    padding-left: 18px;
+  }
+  nav div{
+    height: 65px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 3px 5px grey;
+    position: fixed;
+    top:0;
+    left:0;
+  }
+}
+img{
+  border: 1px;
+}
+
+hr{
+  width: 100%;
+}
+
+#myMedia{
+  text-align: center;
+}
+
+#myMedia h2{
+  color: black;
+}
+
+.myMediaIframe{
+  height: 200px;
+  width: 342px;
+  border: 1px solid black;
+}
+
+#contactForm h2{
+  text-align: center;
+}
+
+.contactFormAllInput{
+  text-align: center;
+}
+
+.contactFormInput{
+  color: grey;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.contactFormTextarea{
+  height: 100px;
+  color: grey;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.contactFormSubmit{
+  text-align: center;
+}
+
+.contactFormSubmit input{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 3px;
+  height: 30px;
+  width: 80px;
+}

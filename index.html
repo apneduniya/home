@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C V</title>
+  <link rel="stylesheet" href="cv_style.css">
+  <script src="cv_script.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("8yh9bG5gIs1x2DztJ");
+    })();
+  </script>
+</head>
+
+<nav>
+  <div>
+    <input type="checkbox" id="checkboxId" onclick="checkbox_function()" />
+    <label for="checkboxId" id="hamburger">&#9776</label>
+    <input type="checkbox" id="checkboxId" onclick="checkbox_function()" />
+    <label for="checkboxId" id="cross">&#x2716</label>
+    <h1 id="navHeading">Portfolio</h1>
+  </div>
+  <div id="menu">
+    <li><a href="#" onclick="checkbox_function()" class="navItems">Home</a></li>
+    <li><a href="#myMedia" class="navItems" onclick="checkbox_function()">My Media</a></li>
+    <li><a href="#contactForm" class="navItems" onclick="checkbox_function()">Contact</a></li>
+    <li><a href="#" class="navItems" onclick="checkbox_function()">About</a></li>
+  </div>
+</nav>
+
+<body>
+  <header>
+    <br>
+    <img src="https://www.gtiarmoredcars.com/wp-content/uploads/2021/02/62681-flat-icons-face-computer-design-avatar-icon.png" alt="" height="100" width="100px">
+    <h1>Adarsh Jaiswal</h1>
+    <p>Programmer</p>
+  </header>
+  <hr>
+  <div>
+    <br>
+    <p>I am Adarsh and I have started and enjoying my programming journey.<br>Till now I have worked with some languages like...</p>
+    <ul>
+      <li>Python (worked on more than 25 modules)</li>
+      <li>C++ (just started)</li>
+      <li>HTML</li>
+      <li>JavaScript</li>
+    </ul>
+    <p>I have not completed all this languages yet but trying to.</p>
+    <br>
+    <img src="https://images.app.goo.g hi nol/3c3Wp7MxyPq6oM7A6" alt="Error will loading image">
+    <br>
+    <p>I h learning this all by internet.</p>
+  </div>
+  <br>
+  <br>
+  <div id="myMedia">
+    <h2>My Media</h2>
+    <iframe class="myMediaIframe" src="https://youtu.be/VDmsTj1pjNc" >Error will loading...</iframe>
+  </div>
+  <br>
+  <div id="contactForm">
+    <h2>Contact Us</h2>
+    <form action="#" onsubmit="return formSubmit()" method="POST">
+      <div class="contactFormAllInput">
+        <input class="contactFormInput" id="userName" type="text" name="Name" placeholder="Rahul Kumar" required><br>
+        <br>
+        <input class="contactFormInput" id="userEmail" type="email" name="E-mail" placeholder="abc123@gmail.com" required><br>
+        <br>
+        <textarea class="contactFormTextarea" id="userBody" name="message" placeholder="Message" required></textarea><br>
+      </div>
+      <div class="contactFormSubmit">
+        <input type="button" name="submit" onclick="send()" value="Submit" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
